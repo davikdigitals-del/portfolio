@@ -25,11 +25,14 @@
     @apply bg-white/20 backdrop-blur-xl;
     @apply border border-white/30;
     @apply text-slate-900 font-semibold py-3 px-8 rounded-2xl;
-    @apply shadow-[0_8px_32px_0_rgba(14, 165, 233, 0.2)];
-    @apply hover:shadow-[0_8px_32px_0_rgba(14, 165, 233, 0.4)];
     @apply transition-all duration-500;
     @apply hover:scale-105 hover:-translate-y-0.5;
     @apply active:scale-95;
+    box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.2);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 8px 32px 0 rgba(14, 165, 233, 0.4);
   }
 
   .btn-primary::before {
@@ -56,10 +59,13 @@
     @apply bg-white/40 backdrop-blur-2xl;
     @apply border border-white/50;
     @apply rounded-3xl p-8;
-    @apply shadow-[0_8px_32px_0_rgba(31, 38, 135, 0.15)];
-    @apply hover:shadow-[0_8px_32px_0_rgba(31, 38, 135, 0.25)];
     @apply transition-all duration-500;
     @apply hover:-translate-y-2;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
   }
 
   .glass-card::before {
@@ -100,7 +106,7 @@
   .glass-nav {
     @apply bg-white/30 backdrop-blur-xl;
     @apply border-b border-white/20;
-    @apply shadow-[0_8px_32px_0_rgba(31, 38, 135, 0.1)];
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
   }
 
   /* Shimmer effect */
