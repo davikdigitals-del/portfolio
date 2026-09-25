@@ -4,7 +4,7 @@ import { ArrowRight, Code2, Trophy, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-10 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-32 pb-10 overflow-hidden">
       {/* Animated Liquid Orbs Background */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-20 animate-blob" />
       <div className="absolute top-20 right-0 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-3xl opacity-20 animate-blob" style={{ animationDelay: "2s" }} />
