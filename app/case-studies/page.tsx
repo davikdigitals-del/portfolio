@@ -3,7 +3,7 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Case Studies | Portfolio of Successful Projects",
+  title: "Portfolio | Real Projects & Success Stories",
   description: "Real projects, real results. See how I've helped businesses succeed online through custom website design and development.",
 };
 
@@ -88,7 +88,7 @@ export default function CaseStudies() {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary-50 to-blue-50 py-20">
         <div className="container-custom text-center">
-          <h1 className="section-title animate-slide-up">Case Studies</h1>
+          <h1 className="section-title animate-slide-up">Portfolio</h1>
           <p className="section-subtitle animate-fade-in">
             Real projects, real results. See how I've helped businesses succeed online.
           </p>

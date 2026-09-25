@@ -41,7 +41,7 @@ export default function RecentWork() {
             href="/case-studies"
             className="hidden md:flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold group"
           >
-            View All Projects
+            View Portfolio
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -81,7 +81,7 @@ export default function RecentWork() {
 
         <div className="text-center mt-12 md:hidden">
           <Link href="/case-studies" className="btn-primary inline-flex items-center gap-2">
-            View All Projects
+            View Portfolio
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
