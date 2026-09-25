@@ -98,7 +98,7 @@ export default function CaseStudies() {
       {/* Case Studies Grid */}
       <section className="py-20">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {caseStudies.map((study, index) => (
               <CaseStudyCard key={index} {...study} />
             ))}
