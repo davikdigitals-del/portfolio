@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -33,19 +34,27 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? "glass-nav py-3 shadow-[0_8px_32px_0_rgba(31,38,135,0.15)]"
-          : "bg-transparent py-6"
+        ? "glass-nav py-3 shadow-[0_8px_32px_0_rgba(31,38,135,0.15)]"
+        : "bg-transparent py-6"
         }`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between">
-          {/* Logo with Glass Effect */}
-          <Link href="/" className="group flex items-center gap-2">
+          {/* Logo with Your Image */}
+          <Link href="/" className="group flex items-center gap-3">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-2xl blur-md opacity-50 group-hover:opacity-75 transition-opacity" />
-              <div className="relative glass-card px-3 py-2 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-blue-600" />
-                <span className="text-2xl font-bold gradient-text">Ajibola</span>
+              <div className="relative glass-card p-1 flex items-center gap-3">
+                <div className="relative w-10 h-10 rounded-xl overflow-hidden">
+                  <Image
+                    src="/me.webp"
+                    alt="Ajibola Gbenga Joseph"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                <span className="text-2xl font-bold gradient-text pr-2">Ajibola</span>
               </div>
             </div>
           </Link>
@@ -57,8 +66,8 @@ export default function Navbar() {
                 key={link.path}
                 href={link.path}
                 className={`relative px-5 py-2.5 rounded-xl font-medium transition-all duration-300 ${pathname === link.path
-                    ? "glass-card text-slate-900"
-                    : "text-slate-700 hover:glass-light"
+                  ? "glass-card text-slate-900"
+                  : "text-slate-700 hover:glass-light"
                   }`}
               >
                 {link.name}
@@ -91,8 +100,8 @@ export default function Navbar() {
                   key={link.path}
                   href={link.path}
                   className={`block px-5 py-3 rounded-xl font-medium transition-all duration-300 ${pathname === link.path
-                      ? "bg-white/50 text-slate-900 shadow-sm"
-                      : "text-slate-700 hover:bg-white/30"
+                    ? "bg-white/50 text-slate-900 shadow-sm"
+                    : "text-slate-700 hover:bg-white/30"
                     }`}
                 >
                   {link.name}

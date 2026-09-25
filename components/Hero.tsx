@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Code2, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, Code2, Trophy, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -17,7 +17,7 @@ export default function Hero() {
             {/* Glass Badge */}
             <div className="inline-flex items-center gap-3 glass-light px-5 py-3 rounded-full font-medium text-slate-800 shadow-lg">
               <div className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400">
-                <Sparkles className="w-4 h-4 text-white" />
+                <Trophy className="w-4 h-4 text-white" />
               </div>
               <span className="font-semibold">5+ Years of Excellence</span>
             </div>

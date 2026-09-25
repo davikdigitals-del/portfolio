@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Rocket } from "lucide-react";
 
 interface CTASectionProps {
   title: string;
@@ -19,7 +19,7 @@ export default function CTASection({ title, description, buttonText, buttonLink 
       <div className="container-custom relative z-10 text-center">
         <div className="glass-card max-w-4xl mx-auto p-12">
           <div className="inline-flex items-center gap-2 glass-light px-4 py-2 rounded-full text-white mb-6">
-            <Sparkles className="w-4 h-4" />
+            <Rocket className="w-4 h-4" />
             <span className="text-sm font-semibold">Let's Create Something Amazing</span>
           </div>
 

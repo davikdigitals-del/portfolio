@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CTASection from "@/components/CTASection";
-import { CheckCircle2, Sparkles } from "lucide-react";
+import { CheckCircle2, Award } from "lucide-react";
 
 export const metadata = {
   title: "About Me | Ajibola Gbenga Joseph - Website Designer & Developer",
@@ -35,7 +35,7 @@ export default function About() {
 
         <div className="container-custom text-center relative z-10">
           <div className="inline-flex items-center gap-2 glass-light px-4 py-2 rounded-full text-slate-800 mb-6">
-            <Sparkles className="w-4 h-4" />
+            <Award className="w-4 h-4" />
             <span className="text-sm font-semibold">Get to Know Me</span>
           </div>
           <h1 className="section-title animate-slide-up">About Me</h1>
