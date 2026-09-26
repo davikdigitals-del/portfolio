@@ -44,18 +44,24 @@ export default function WebDevelopmentPage() {
 
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {[
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Tailwind CSS",
-              "Node.js",
-              "WordPress",
-              "Supabase",
-              "REST APIs",
+              { name: "React", link: "/technologies/react" },
+              { name: "Next.js", link: "/technologies/nextjs" },
+              { name: "TypeScript", link: "/technologies/typescript" },
+              { name: "Tailwind CSS", link: "/technologies/tailwind" },
+              { name: "Node.js", link: "/technologies/nodejs" },
+              { name: "WordPress", link: "/technologies/wordpress" },
+              { name: "Supabase", link: "/technologies/supabase" },
+              { name: "REST APIs", link: "#" },
             ].map((tech, index) => (
-              <div key={index} className="glass-card px-3 md:px-4 lg:px-6 py-1.5 md:py-2 lg:py-3 font-semibold text-xs md:text-sm lg:text-base text-slate-700">
-                {tech}
-              </div>
+              tech.link === "#" ? (
+                <div key={index} className="glass-card px-3 md:px-4 lg:px-6 py-1.5 md:py-2 lg:py-3 font-semibold text-xs md:text-sm lg:text-base text-slate-700">
+                  {tech.name}
+                </div>
+              ) : (
+                <Link key={index} href={tech.link} className="glass-card px-3 md:px-4 lg:px-6 py-1.5 md:py-2 lg:py-3 font-semibold text-xs md:text-sm lg:text-base text-slate-700 hover:text-slate-900 hover:scale-105 transition-all duration-200 cursor-pointer">
+                  {tech.name}
+                </Link>
+              )
             ))}
           </div>
         </div>

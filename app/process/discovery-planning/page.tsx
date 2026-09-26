@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Link from "next/link";
 import { ArrowLeft, Lightbulb, CheckCircle2, Target, Users, FileText } from "lucide-react";
 import CTASection from "@/components/CTASection";
 

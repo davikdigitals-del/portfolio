@@ -96,11 +96,21 @@ export default function EcommercePage() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-slate-700">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0" />
-                  <span className="text-sm md:text-base">Custom Build (React/Next.js)</span>
+                  <span className="text-sm md:text-base">
+                    Custom Build (
+                    <Link href="/technologies/react" className="text-purple-600 hover:text-purple-800 underline">React</Link>
+                    /
+                    <Link href="/technologies/nextjs" className="text-purple-600 hover:text-purple-800 underline">Next.js</Link>
+                    )
+                  </span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-700">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0" />
-                  <span className="text-sm md:text-base">WooCommerce (WordPress)</span>
+                  <span className="text-sm md:text-base">
+                    WooCommerce (
+                    <Link href="/technologies/wordpress" className="text-purple-600 hover:text-purple-800 underline">WordPress</Link>
+                    )
+                  </span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-700">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 flex-shrink-0" />
