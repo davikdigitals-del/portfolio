@@ -1,12 +1,13 @@
+import Link from "next/link";
+
 const technologies = [
-  { name: "React", gradient: "from-blue-400 to-cyan-400" },
-  { name: "Next.js", gradient: "from-slate-700 to-slate-900" },
-  { name: "TypeScript", gradient: "from-blue-600 to-blue-800" },
-  { name: "Tailwind CSS", gradient: "from-cyan-400 to-blue-500" },
-  { name: "WordPress", gradient: "from-blue-500 to-indigo-600" },
-  { name: "Node.js", gradient: "from-green-500 to-emerald-600" },
-  { name: "Supabase", gradient: "from-emerald-400 to-green-500" },
-  { name: "Vercel", gradient: "from-slate-800 to-black" },
+  { name: "React", gradient: "from-blue-400 to-cyan-400", link: "/technologies/react" },
+  { name: "Next.js", gradient: "from-slate-700 to-slate-900", link: "/technologies/nextjs" },
+  { name: "TypeScript", gradient: "from-blue-600 to-blue-800", link: "/technologies/typescript" },
+  { name: "Tailwind CSS", gradient: "from-cyan-400 to-blue-500", link: "/technologies/tailwind" },
+  { name: "WordPress", gradient: "from-blue-500 to-indigo-600", link: "/technologies/wordpress" },
+  { name: "Node.js", gradient: "from-green-500 to-emerald-600", link: "/technologies/nodejs" },
+  { name: "Supabase", gradient: "from-emerald-400 to-green-500", link: "/technologies/supabase" },
 ];
 
 export default function Technologies() {
@@ -23,8 +24,9 @@ export default function Technologies() {
         </div>
         <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
           {technologies.map((tech, index) => (
-            <div
+            <Link
               key={index}
+              href={tech.link}
               className="group relative"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
@@ -32,10 +34,10 @@ export default function Technologies() {
               <div className={`absolute inset-0 bg-gradient-to-r ${tech.gradient} rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-opacity duration-300`} />
 
               {/* Glass card */}
-              <div className="relative glass-card px-6 py-3 font-semibold text-slate-700 hover:text-slate-900 transform hover:-translate-y-1 transition-all duration-300">
+              <div className="relative glass-card px-6 py-3 font-semibold text-slate-700 hover:text-slate-900 transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 {tech.name}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

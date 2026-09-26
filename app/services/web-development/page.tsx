@@ -14,20 +14,20 @@ export default function WebDevelopmentPage() {
       {/* Hero */}
       <section className="relative py-24 overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-20 animate-blob" />
-        
+
         <div className="container-custom relative z-10">
           <Link href="/services" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 group">
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to Services
           </Link>
-          
+
           <div className="flex items-center gap-4 mb-6">
             <div className="bg-gradient-to-r from-blue-400 to-cyan-400 p-4 rounded-2xl">
               <Code2 className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold gradient-text">Web Development</h1>
           </div>
-          
+
           <p className="text-xl text-slate-700 max-w-3xl">
             Fast, secure, and scalable websites built with cutting-edge technologies and best practices for optimal performance.
           </p>
@@ -41,7 +41,7 @@ export default function WebDevelopmentPage() {
           <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
             I work with modern, industry-standard technologies to build fast, reliable websites
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {[
               "React",
@@ -51,13 +51,9 @@ export default function WebDevelopmentPage() {
               "Node.js",
               "WordPress",
               "Supabase",
-              "PostgreSQL",
-              "MongoDB",
-              "Vercel",
-              "AWS",
               "REST APIs",
             ].map((tech, index) => (
-              <div key={index} className="glass-card px-4 md:px-6 py-2 md:py-3 font-semibold text-sm md:text-base text-slate-700">
+              <div key={index} className="glass-card px-3 md:px-4 lg:px-6 py-1.5 md:py-2 lg:py-3 font-semibold text-xs md:text-sm lg:text-base text-slate-700">
                 {tech}
               </div>
             ))}
@@ -69,8 +65,8 @@ export default function WebDevelopmentPage() {
       <section className="py-20 bg-gray-50">
         <div className="container-custom max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">What's Included</h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-6">
+
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
             {[
               "Clean, Maintainable Code",
               "Responsive Design Implementation",
@@ -85,9 +81,9 @@ export default function WebDevelopmentPage() {
               "SSL Certificate Setup",
               "Analytics Integration",
             ].map((item, index) => (
-              <div key={index} className="glass-card flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-blue-600 flex-shrink-0 mt-1" />
-                <span className="text-sm md:text-base text-slate-700 font-medium">{item}</span>
+              <div key={index} className="glass-card flex items-start gap-2 md:gap-3">
+                <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-blue-600 flex-shrink-0 mt-0.5 md:mt-1" />
+                <span className="text-xs md:text-sm lg:text-base text-slate-700 font-medium">{item}</span>
               </div>
             ))}
           </div>
@@ -98,7 +94,7 @@ export default function WebDevelopmentPage() {
       <section className="py-20">
         <div className="container-custom max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">My Development Approach</h2>
-          
+
           <div className="space-y-8">
             {[
               {
@@ -140,7 +136,7 @@ export default function WebDevelopmentPage() {
       <section className="py-20 bg-gray-50">
         <div className="container-custom max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center gradient-text">Why Choose My Development Services</h2>
-          
+
           <div className="space-y-6">
             <div className="glass-card">
               <h3 className="text-lg md:text-xl font-bold mb-3 text-slate-900">Performance-First</h3>
@@ -148,14 +144,14 @@ export default function WebDevelopmentPage() {
                 I optimize every aspect of your website for speed. Fast loading times improve user experience, SEO rankings, and conversion rates.
               </p>
             </div>
-            
+
             <div className="glass-card">
               <h3 className="text-lg md:text-xl font-bold mb-3 text-slate-900">Secure & Reliable</h3>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 Security is built in from day one. I follow best practices for authentication, data protection, and secure coding to keep your site safe.
               </p>
             </div>
-            
+
             <div className="glass-card">
               <h3 className="text-lg md:text-xl font-bold mb-3 text-slate-900">Scalable Solutions</h3>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
