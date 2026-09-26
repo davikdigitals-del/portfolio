@@ -100,20 +100,20 @@ export default function About() {
               I specialize in designing and developing custom websites that are:
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="glass-card flex items-start gap-4 hover:scale-105 transition-all duration-500"
+                className="glass-card flex items-start gap-2 md:gap-4 hover:scale-105 transition-all duration-500"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative">
+                <div className="relative flex-shrink-0">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl blur-md opacity-40" />
-                  <div className="relative bg-gradient-to-r from-blue-400 to-cyan-400 p-2 rounded-xl">
-                    <CheckCircle2 className="w-6 h-6 text-white" />
+                  <div className="relative bg-gradient-to-r from-blue-400 to-cyan-400 p-1.5 md:p-2 rounded-xl">
+                    <CheckCircle2 className="w-4 h-4 md:w-6 md:h-6 text-white" />
                   </div>
                 </div>
-                <p className="text-slate-700 font-medium flex-1">{feature}</p>
+                <p className="text-xs md:text-base text-slate-700 font-medium flex-1">{feature}</p>
               </div>
             ))}
           </div>
