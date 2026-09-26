@@ -87,11 +87,11 @@ export default function WebsiteDesignPage() {
                 description: "Build interactive prototypes for you to review and provide feedback. I refine the design until you're 100% satisfied.",
               },
             ].map((process, index) => (
-              <div key={index} className="glass-card relative">
-                <div className="absolute -left-3 top-4 md:-left-4 md:top-6 lg:-left-6 bg-gradient-to-r from-pink-400 to-rose-400 text-white w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center font-bold text-base md:text-lg lg:text-xl shadow-lg">
+              <div key={index} className="glass-card relative pl-16 md:pl-20">
+                <div className="absolute left-4 top-4 md:left-6 md:top-6 bg-gradient-to-r from-pink-400 to-rose-400 text-white w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
                   {process.step}
                 </div>
-                <div className="pl-10 md:pl-12 lg:pl-16">
+                <div className="py-2">
                   <h3 className="text-base md:text-lg lg:text-2xl font-bold mb-2 md:mb-3 text-slate-900">{process.title}</h3>
                   <p className="text-xs md:text-sm lg:text-lg text-slate-600 leading-relaxed">{process.description}</p>
                 </div>
