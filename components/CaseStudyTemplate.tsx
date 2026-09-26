@@ -42,7 +42,7 @@ export default function CaseStudyTemplate({
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
-        
+
         <div className="absolute inset-0 flex items-end">
           <div className="container-custom pb-16">
             <Link href="/case-studies" className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 group">
@@ -62,26 +62,26 @@ export default function CaseStudyTemplate({
       {/* Project Details */}
       <section className="py-16 bg-white">
         <div className="container-custom">
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-16">
             <div className="glass-card text-center">
-              <Calendar className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <div className="text-sm text-slate-600 mb-1">Timeline</div>
-              <div className="font-bold text-slate-900">{timeline}</div>
+              <Calendar className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-2 md:mb-3" />
+              <div className="text-xs md:text-sm text-slate-600 mb-1">Timeline</div>
+              <div className="font-bold text-sm md:text-base text-slate-900">{timeline}</div>
             </div>
             <div className="glass-card text-center">
-              <Users className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <div className="text-sm text-slate-600 mb-1">Industry</div>
-              <div className="font-bold text-slate-900">{industry}</div>
+              <Users className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-2 md:mb-3" />
+              <div className="text-xs md:text-sm text-slate-600 mb-1">Industry</div>
+              <div className="font-bold text-sm md:text-base text-slate-900">{industry}</div>
             </div>
             <div className="glass-card text-center">
-              <Zap className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <div className="text-sm text-slate-600 mb-1">Services</div>
-              <div className="font-bold text-slate-900">Design & Dev</div>
+              <Zap className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-2 md:mb-3" />
+              <div className="text-xs md:text-sm text-slate-600 mb-1">Services</div>
+              <div className="font-bold text-sm md:text-base text-slate-900">Design & Dev</div>
             </div>
             <div className="glass-card text-center">
-              <ExternalLink className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-              <div className="text-sm text-slate-600 mb-1">Live Site</div>
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-blue-600 hover:text-blue-700">
+              <ExternalLink className="w-6 h-6 md:w-8 md:h-8 text-blue-600 mx-auto mb-2 md:mb-3" />
+              <div className="text-xs md:text-sm text-slate-600 mb-1">Live Site</div>
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="font-bold text-xs md:text-sm text-blue-600 hover:text-blue-700">
                 Visit Website
               </a>
             </div>
@@ -115,11 +115,11 @@ export default function CaseStudyTemplate({
             {/* Results */}
             <div>
               <h2 className="text-3xl font-bold mb-4 gradient-text">The Results</h2>
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                 {results.map((result, index) => (
                   <div key={index} className="glass-card text-center">
-                    <div className="text-4xl font-bold gradient-text mb-2">{result.value}</div>
-                    <div className="text-slate-700">{result.label}</div>
+                    <div className="text-2xl md:text-4xl font-bold gradient-text mb-2">{result.value}</div>
+                    <div className="text-sm md:text-base text-slate-700">{result.label}</div>
                   </div>
                 ))}
               </div>
