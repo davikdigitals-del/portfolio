@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Mail, MapPin, Globe } from "lucide-react";
+import Image from "next/image";
+import { Mail, MapPin } from "lucide-react";
 
 const footerLinks = [
   {
@@ -40,8 +41,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="glass-card p-2 rounded-xl">
-                <Globe className="w-5 h-5 text-cyan-400" />
+              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg ring-2 ring-cyan-400/40">
+                <Image
+                  src="/ajibola.jpg"
+                  alt="Ajibola Logo"
+                  width={40}
+                  height={40}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <h3 className="text-2xl font-bold text-white">
                 Ajibola
