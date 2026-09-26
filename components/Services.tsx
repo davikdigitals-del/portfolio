@@ -34,7 +34,7 @@ export default function Services() {
           <p className="section-subtitle mt-4">Premium services tailored to your needs</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -42,20 +42,20 @@ export default function Services() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Icon with gradient background */}
-              <div className="relative mb-6">
+              <div className="relative mb-4 md:mb-6">
                 <div className={`absolute inset-0 bg-gradient-to-r ${service.gradient} rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity`} />
-                <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg`}>
-                  <service.icon className="w-8 h-8 text-white" />
+                <div className={`relative w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center shadow-lg`}>
+                  <service.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:gradient-text transition-all">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4 text-slate-900 group-hover:gradient-text transition-all">
                 {service.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">{service.description}</p>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">{service.description}</p>
 
               {/* Hover indicator */}
-              <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-slate-500 group-hover:text-blue-600 transition-colors">
+              <div className="mt-4 md:mt-6 flex items-center gap-2 text-xs md:text-sm font-semibold text-slate-500 group-hover:text-blue-600 transition-colors">
                 <span>Learn more</span>
                 <div className="w-0 group-hover:w-6 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400 transition-all duration-300 rounded-full" />
               </div>

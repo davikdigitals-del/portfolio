@@ -46,7 +46,7 @@ export default function RecentWork() {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
           {recentProjects.map((project, index) => (
             <Link
               key={index}
@@ -57,20 +57,21 @@ export default function RecentWork() {
                 className="glass-card group p-0 overflow-hidden hover:scale-105 transition-all duration-500 cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-48 md:h-64 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
                 </div>
-                <div className="p-6">
-                  <div className="text-sm text-blue-600 font-semibold mb-2">
+                <div className="p-3 md:p-6">
+                  <div className="text-xs md:text-sm text-blue-600 font-semibold mb-1 md:mb-2">
                     {project.category}
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-sm md:text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
                     {project.title}
                   </h3>
                 </div>

@@ -110,14 +110,16 @@ export default function CaseStudies() {
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
           <h2 className="text-3xl font-bold text-center mb-12">More Work</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {[7, 8, 9].map((num) => (
-              <div key={num} className="relative h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow group">
+              <div key={num} className="relative h-48 md:h-64 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow group">
                 <Image
                   src={`/portfolio${num}.png`}
                   alt={`Portfolio ${num}`}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 33vw"
                 />
               </div>
             ))}

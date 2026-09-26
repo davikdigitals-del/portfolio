@@ -46,7 +46,7 @@ export default function Process() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -54,22 +54,22 @@ export default function Process() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Step number */}
-              <div className="absolute -top-4 -right-4 text-6xl font-bold text-white/10">
+              <div className="absolute -top-4 -right-4 text-4xl md:text-6xl font-bold text-white/10">
                 {step.number}
               </div>
 
               {/* Icon */}
-              <div className="relative mb-6">
+              <div className="relative mb-4 md:mb-6">
                 <div className={`absolute inset-0 bg-gradient-to-r ${step.gradient} rounded-2xl blur-xl opacity-40 group-hover:opacity-60 transition-opacity`} />
-                <div className={`relative w-16 h-16 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg`}>
-                  <step.icon className="w-8 h-8 text-white" />
+                <div className={`relative w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br ${step.gradient} flex items-center justify-center shadow-lg`}>
+                  <step.icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold mb-3 text-slate-900">
+              <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3 text-slate-900">
                 {step.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 {step.description}
               </p>
             </div>
