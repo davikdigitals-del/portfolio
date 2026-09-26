@@ -15,6 +15,11 @@ export default function DevelopmentTestingPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-3xl opacity-20 animate-blob" />
 
         <div className="container-custom relative z-10">
+          <Link href="/services" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 group">
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+            Back to Services
+          </Link>
+
           <div className="inline-flex items-center gap-2 glass-light px-4 py-2 rounded-full text-slate-800 mb-6">
             <span className="text-sm font-semibold">Step 03</span>
           </div>

@@ -121,7 +121,7 @@ export default function EcommercePage() {
         <div className="container-custom max-w-5xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">E-Commerce Development Process</h2>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {[
               {
                 step: "01",
@@ -144,13 +144,13 @@ export default function EcommercePage() {
                 description: "Thoroughly test all purchase flows, payment processing, and order management. Launch your store and provide training on managing products and orders.",
               },
             ].map((process, index) => (
-              <div key={index} className="glass-card relative">
-                <div className="absolute -left-4 top-6 md:-left-6 bg-gradient-to-r from-purple-400 to-pink-400 text-white w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
+              <div key={index} className="glass-card relative pl-16 md:pl-20">
+                <div className="absolute left-4 top-4 md:left-6 md:top-6 bg-gradient-to-r from-purple-400 to-pink-400 text-white w-12 h-12 md:w-14 md:h-14 rounded-2xl flex items-center justify-center font-bold text-lg md:text-xl shadow-lg">
                   {process.step}
                 </div>
-                <div className="pl-12 md:pl-16">
-                  <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-slate-900">{process.title}</h3>
-                  <p className="text-sm md:text-lg text-slate-600 leading-relaxed">{process.description}</p>
+                <div className="py-2">
+                  <h3 className="text-base md:text-lg lg:text-2xl font-bold mb-2 md:mb-3 text-slate-900">{process.title}</h3>
+                  <p className="text-xs md:text-sm lg:text-lg text-slate-600 leading-relaxed">{process.description}</p>
                 </div>
               </div>
             ))}
