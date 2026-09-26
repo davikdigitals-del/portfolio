@@ -12,67 +12,37 @@ const services = [
     icon: Palette,
     title: "Website Design",
     description: "Custom website designs that capture your brand identity and engage your target audience.",
-    features: [
-      "Responsive mobile-first design",
-      "Modern UI/UX best practices",
-      "Brand-aligned visual identity",
-      "Conversion-optimized layouts",
-    ],
+    link: "/services/website-design",
   },
   {
     icon: Code2,
     title: "Website Development",
     description: "Fast, secure, and scalable websites built with cutting-edge technologies.",
-    features: [
-      "React, Next.js, WordPress",
-      "SEO optimization",
-      "Performance optimization",
-      "Cross-browser compatibility",
-    ],
+    link: "/services/web-development",
   },
   {
     icon: ShoppingCart,
     title: "E-Commerce Solutions",
     description: "Complete online stores that drive sales and provide seamless shopping experiences.",
-    features: [
-      "Product catalog management",
-      "Secure payment integration",
-      "Inventory management",
-      "Shopping cart & checkout",
-    ],
+    link: "/services/ecommerce",
   },
   {
     icon: FileText,
     title: "Landing Pages",
     description: "High-converting landing pages designed to capture leads and drive specific actions.",
-    features: [
-      "Focused messaging",
-      "Clear call-to-actions",
-      "Fast loading speeds",
-      "A/B testing ready",
-    ],
+    link: "/services/landing-pages",
   },
   {
     icon: Layers,
     title: "Web Applications",
     description: "Custom web applications tailored to your business processes and requirements.",
-    features: [
-      "Full-stack development",
-      "Database integration",
-      "API development",
-      "Cloud deployment",
-    ],
+    link: "/services/web-applications",
   },
   {
     icon: Wrench,
     title: "Website Maintenance",
     description: "Ongoing support and maintenance to keep your website running smoothly.",
-    features: [
-      "Regular updates",
-      "Security monitoring",
-      "Performance optimization",
-      "Bug fixes & improvements",
-    ],
+    link: "/services/website-maintenance",
   },
 ];
 
