@@ -26,7 +26,8 @@ const footerLinks = [
 const socialLinks = [
   { name: "TikTok", url: "https://www.tiktok.com/@joseph_4124" },
   { name: "YouTube", url: "https://www.youtube.com/@AjibolaGbengaJoseph1" },
-  { name: "Google Maps", url: "https://share.google/aXjcfG6DMAOnPqXk4" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/gbengajosephajibola/" },
+  { name: "Google My Business", url: "https://share.google/aXjcfG6DMAOnPqXk4" },
 ];
 
 export default function Footer() {
