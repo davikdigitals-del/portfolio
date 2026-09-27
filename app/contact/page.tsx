@@ -6,7 +6,7 @@ import { Mail, MapPin, Send, ExternalLink } from "lucide-react";
 const socialLinks = [
   {
     name: "TikTok",
-    url: "https://www.tiktok.com/@joseph_4124",
+    url: "https://www.tiktok.com/@ajibolagbengajoseph",
     color: "from-black to-gray-800",
     hoverColor: "hover:from-gray-800 hover:to-black",
     icon: (
@@ -61,11 +61,35 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 1500);
+
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/gbengajosephajibola@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New message from ${formData.name} — Portfolio`,
+          _captcha: "false",
+        }),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 4000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -157,6 +181,11 @@ export default function Contact() {
                 {status === "success" && (
                   <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-xl text-center font-medium">
                     ✓ Thank you! I'll get back to you soon.
+                  </div>
+                )}
+                {status === "error" && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-xl text-center font-medium">
+                    ✗ Something went wrong. Please try emailing me directly.
                   </div>
                 )}
               </form>

@@ -24,7 +24,7 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-  { name: "TikTok", url: "https://www.tiktok.com/@joseph_4124" },
+  { name: "TikTok", url: "https://www.tiktok.com/@ajibolagbengajoseph" },
   { name: "YouTube", url: "https://www.youtube.com/@AjibolaGbengaJoseph1" },
   { name: "LinkedIn", url: "https://www.linkedin.com/in/gbengajosephajibola/" },
   { name: "Google My Business", url: "https://share.google/aXjcfG6DMAOnPqXk4" },
